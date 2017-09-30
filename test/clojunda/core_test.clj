@@ -12,4 +12,9 @@
   (eusian y 20)
 (is (= 20 y)))
 
+(testing "jeung"
+  (is (= true (jeung true true)))
+  (is (= false (jeung true false)))
+  (is (= false (jeung false false))))
+
 (run-tests 'clojunda.core-test)

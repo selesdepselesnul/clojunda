@@ -19,3 +19,6 @@
 
 (defmacro eusian-lokal [binds body]
     (list 'let binds body))
+
+(defmacro jeung [x y]
+          (list 'and x y))
