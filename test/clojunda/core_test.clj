@@ -8,8 +8,10 @@
 (is (= "true" (lamun-jeung true)))
 (is (= "false" (lamun-jeung false))))
 
-(lamun (= 1 1) 
-  (ulangi-sajumlah-n 20 #(println %))
-  (println "salah"))
+(with-test
+  (fungsi nambahkeun [x y]
+          (+ x y))
+(is (= 3 (nambahkeun 1 2)))
+(is (= 4 (nambahkeun 1 3))))
 
 (run-tests 'clojunda.core-test)

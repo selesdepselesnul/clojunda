@@ -10,3 +10,6 @@
         (list 'if-not (list '= 'i n)
               (list 'do (list action 'i) 
                         (list 'recur (list '+ 'i 1))))))
+
+(defmacro fungsi [name vect body]
+          (list 'defn name vect body))
