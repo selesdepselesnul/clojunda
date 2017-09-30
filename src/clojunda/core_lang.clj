@@ -5,7 +5,7 @@
               then 
               else))
 
-(defmacro ulangi-sajumlah-n [n action]
+(defmacro ulangi [n action]
     (list 'loop '[i 0]
         (list 'if-not (list '= 'i n)
               (list 'do (list action 'i) 
