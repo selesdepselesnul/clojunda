@@ -1,4 +1,4 @@
-(ns clojunda.core-test
+(ns clojunda.core-lang-test
   (:require [clojunda.core-lang :refer :all])
   (:use clojure.test))
 
@@ -22,4 +22,5 @@
   (is (= true (atawa true false)))
   (is (= false (atawa false false))))
 
-(run-tests 'clojunda.core-test)
+
+(run-tests 'clojunda.core-lang-test)
