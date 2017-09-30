@@ -21,7 +21,10 @@
     (list 'let binds body))
 
 (defmacro jeung [x y]
-          (list 'and x y))
+    (list 'and x y))
 
 (defmacro atawa [x y]
-          (list 'or x y))
+    (list 'or x y))
+
+(defmacro henteu [value]
+    (list 'not value))

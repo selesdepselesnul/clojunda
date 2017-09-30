@@ -22,5 +22,8 @@
   (is (= true (atawa true false)))
   (is (= false (atawa false false))))
 
+(testing "henteu"
+  (is (= true (henteu false)))
+  (is (= false (henteu true))))
 
 (run-tests 'clojunda.core-lang-test)
