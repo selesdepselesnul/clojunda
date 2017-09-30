@@ -8,4 +8,8 @@
 (is (= "true" (lamun-jeung true)))
 (is (= "false" (lamun-jeung false))))
 
+(lamun (= 1 1) 
+  (ulangi-sajumlah-n 20 #(println %))
+  (println "salah"))
+
 (run-tests 'clojunda.core-test)
