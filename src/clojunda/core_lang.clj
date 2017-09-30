@@ -13,3 +13,6 @@
 
 (defmacro fungsi [name vect body]
           (list 'defn name vect body))
+
+(defmacro eusian [name value]
+    (list 'def name value))

@@ -9,9 +9,7 @@
 (is (= "false" (lamun-jeung false))))
 
 (with-test
-  (fungsi nambahkeun [x y]
-          (+ x y))
-(is (= 3 (nambahkeun 1 2)))
-(is (= 4 (nambahkeun 1 3))))
+  (eusian y 20)
+(is (= 20 y)))
 
 (run-tests 'clojunda.core-test)
