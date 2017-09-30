@@ -16,3 +16,6 @@
 
 (defmacro eusian [name value]
     (list 'def name value))
+
+(defmacro eusian-lokal [binds body]
+    (list 'let binds body))
