@@ -3,3 +3,10 @@
 (defmacro lamun [test then else]
     (list 'if test
      then else))
+
+(defmacro ulangi-sajumlah-n [n action]
+    (list 'loop '[i 0]
+        (list 'if-not (list '= 'i n)
+              (list 'do (list action 'i) 
+                        (list 'recur (list '+ 'i 1))))))
+

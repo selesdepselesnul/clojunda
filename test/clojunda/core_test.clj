@@ -1,5 +1,6 @@
 (ns clojunda.core-test
-  (:require [clojunda.core-lang :refer :all]))
+  (:require [clojunda.core-lang :refer :all])
+  (:use clojure.test))
 
 (with-test
   (defn lamun-jeung [x]
