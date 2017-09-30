@@ -22,3 +22,6 @@
 
 (defmacro jeung [x y]
           (list 'and x y))
+
+(defmacro atawa [x y]
+          (list 'or x y))

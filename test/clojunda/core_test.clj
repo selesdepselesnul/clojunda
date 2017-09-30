@@ -17,4 +17,9 @@
   (is (= false (jeung true false)))
   (is (= false (jeung false false))))
 
+(testing "atawa"
+  (is (= true (atawa true true)))
+  (is (= true (atawa true false)))
+  (is (= false (atawa false false))))
+
 (run-tests 'clojunda.core-test)
